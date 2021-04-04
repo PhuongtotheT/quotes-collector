@@ -18,23 +18,38 @@
     <![endif]-->
 
       <section>
+        <h2>Make request to API and get sample response</h2>
         <input id="api-url" type="text" placeholder="API URL">
         <input id="requests" type="text" placeholder="# of requests">
-        <input id="submit-btn" type="submit" value="Get Quotes">
+        <input id="submit-btn" type="submit" value="Get Sample Response">
       </section>
       
-      <section>
-        <input id="name" type="text" placeholder="Name of character">
-        <input id="quote" type="text" placeholder="Quote">
-        <input id="submit-btn2" type="submit" value="Save Quotes">
-      </section>
+      <h2>Make request to API and save to database </h2>
+      
+        <input id="name" type="text" placeholder="Name of character" name="name">
+        <input id="quote" type="text" placeholder="Quote" name="quote">
+        <input id="submit-btn2" type="submit" value="Save">
+      
+
+      <!-- <form action="/addQuote">
+        @method('PUT')
+        <input id="name" type="text" placeholder="Name of character" name="name">
+        <input id="quote" type="text" placeholder="Quote" name="quote">
+        <input id="submit-btn3" type="submit" value="Save Quotes">
+      </form> -->
+
+      <!-- <form action="/addRapper" method="POST">
+        <input type="text" placeholder="Stage Name" name="stageName">
+        <input type="text" placeholder="Birth Name" name="birthName">
+        <input type="submit">
+      </form> -->
     
-      
+      <h2>Sample response view</h2>
       <section id="view-area"></section>
 
 
 
     
-    <script src="../public/js/main.js" async defer></script>
+    <script src="js/main.js" async defer></script>
   </body>
 </html>
